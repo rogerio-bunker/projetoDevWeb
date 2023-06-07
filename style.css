@@ -12,8 +12,11 @@ header {
 }
 
 h1 {
-  margin: 0;
+  font-size: 24px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento inferior */
 }
+
 
 nav ul {
   list-style-type: none;
@@ -55,15 +58,17 @@ main {
 
 /*nav bar*/
 nav ul li a {
-  color: #333; /* Cor do texto */
-  font-size: 18px; /* Tamanho da fonte */
-  padding: 10px 15px; /* Espaçamento interno */
-  text-decoration: none; /* Remover sublinhado */
+  color: #333;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid #333; /* Adicione esta linha para criar o contorno */
+  border-radius: 5px; /* Adicione esta linha para criar bordas arredondadas */
 }
 
 nav ul li a:hover {
-  background-color: #638869; /* Cor de fundo ao passar o mouse */
-  color: #131313; /* Cor do texto ao passar o mouse */
+  background-color: #638869;
+  color: #131313;
 }
 /*Cadastro posição*/
 header {
