@@ -1,5 +1,7 @@
 /* Estilos gerais */
 
+/* Estilos gerais */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,16 +9,23 @@ body {
 }
 
 header {
-  background-color: #75a57f;
+  background-color: #f8f8f8;
   padding: 20px;
 }
 
 h1 {
-  font-size: 24px; /* Tamanho da fonte */
+  font-size: 20px; /* Tamanho da fonte */
   color: #333; /* Cor do texto */
-  margin-bottom: 10px; /* Espaçamento inferior */
+  margin-bottom: 60px; /* Espaçamento inferior */
+  text-align: left;
+  margin-top: -10px;
+  
+  
 }
-
+header h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 50px;
+}
 
 nav ul {
   list-style-type: none;
@@ -33,58 +42,101 @@ nav li a {
   color: #333;
 }
 
+nav {
+  text-align: center;
+}
+
 .content {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
-/*footer
 
+/*footer*/
 footer {
-  display: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main {
-  margin-bottom: 60px;  Ajuste o valor conforme necessário */
+body {
+  margin-bottom: 60px; /* Ajuste esse valor para deixar espaço para o footer */
+}
+
+
+
+
 
 
 /*nav bar*/
+
 nav ul li a {
+  font-weight: bold;
   color: #333;
   font-size: 18px;
   padding: 10px 15px;
   text-decoration: none;
-  border: 1px solid #333; /* Adicione esta linha para criar o contorno */
+  border: 1px solid #097280; /* Cor da borda original */
+  background-image:none; /* Degradê linear de azul ciano para azul escuro */
   border-radius: 5px; /* Adicione esta linha para criar bordas arredondadas */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para as mudanças de cor e relevo */
 }
 
 nav ul li a:hover {
-  background-color: #638869;
-  color: #131313;
+  color: #1a118e; /* Nova cor do texto ao passar o mouse */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Efeito de relevo ao passar o mouse */
 }
+
+/*banner*/
+
+body {
+  background-image: url(/imagens/61802.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+/*header banner*/
+header {
+  background-image: url(/imagens/teste1.png);
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+
 /*Cadastro posição*/
 header {
   position: relative;
 }
+
 .cadastro-link {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
-.cadastro-link {
-  background-color: #70756d; /* Cor de fundo em destaque */
+
+
+
+.cadastro-link a {
+  background-color: transparent; /* Remover cor de fundo */
   color: #ffffff; /* Cor do texto em destaque */
   padding: 10px 15px; /* Espaçamento interno para o link */
-  border-radius: 5px; /* Borda arredondada */
+  border: none; /* Remover borda */
+  text-decoration: none; /* Remover sublinhado do texto */
 }
+
+.no-border {
+  border: none;
+}
+/* Estilos específicos para o link "Cadastro" */
 
 
 /* style.css cadastro */
@@ -104,6 +156,7 @@ form input[type="tel"] {
   width: 100%;
   padding: 5px;
 }
+
 /*formulario*/
 .radio-container {
   display: block;
@@ -117,12 +170,13 @@ form input[type="tel"] {
 
 .radio-label {
   margin-right: 20px;
-  
 }
+
 .question {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .question-label {
   margin-right: 10px;
   font-family: Arial, sans-serif;
@@ -130,45 +184,43 @@ form input[type="tel"] {
   font-weight: bold;
   color: #333333;
 }
+
 /*texto pagina inicial*/
 .paragraph {
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
-
-
-
 /* responsivo */
 
 @media only screen and (max-width: 600px) {
   /* Estilos para telas menores que 600px */
-  
+
   header {
     padding: 10px;
   }
-  
+
   nav li {
     display: block;
     margin-bottom: 10px;
   }
-  
+
   .content {
     padding: 10px;
   }
-  
+
   footer {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   /* Estilos para telas menores que 480px */
-  
+
   h1 {
     font-size: 24px;
   }
-  
+
   nav li a {
     font-size: 14px;
   }
@@ -176,24 +228,23 @@ form input[type="tel"] {
 
 @media only screen and (min-width: 768px) {
   /* Estilos para telas maiores ou iguais a 768px */
-  
+
   header {
     padding: 30px;
   }
-  
+
   nav li {
     margin-right: 20px;
   }
-  
+
   .content {
     padding: 30px;
   }
-  
+
   footer {
-    padding: 30px;
+    padding: 5px;
   }
 }
-
 
 form input[type="submit"] {
   padding: 10px;
@@ -203,27 +254,26 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
-
 @media only screen and (min-width: 1024px) {
   /* Estilos para telas maiores ou iguais a 1024px */
-  
+
   header {
     padding: 40px;
   }
-  
+
   h1 {
     font-size: 36px;
   }
-  
+
   nav li a {
     font-size: 16px;
   }
-  
+
   .content {
     padding: 40px;
   }
-  
+
   footer {
-    padding: 40px;
+    padding: 5px;
   }
 }
