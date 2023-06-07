@@ -1,4 +1,4 @@
-/* style.css */
+/* Estilos gerais */
 
 body {
   margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #f2f2f2;
+  background-color: #75a57f;
   padding: 20px;
 }
 
@@ -35,9 +35,190 @@ nav li a {
   margin: 0 auto;
   padding: 20px;
 }
+/*footer
 
 footer {
-  background-color: #f2f2f2;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
   padding: 20px;
   text-align: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  margin-bottom: 60px;  Ajuste o valor conforme necessário */
+
+
+/*nav bar*/
+nav ul li a {
+  color: #333; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  padding: 10px 15px; /* Espaçamento interno */
+  text-decoration: none; /* Remover sublinhado */
+}
+
+nav ul li a:hover {
+  background-color: #638869; /* Cor de fundo ao passar o mouse */
+  color: #131313; /* Cor do texto ao passar o mouse */
+}
+/*Cadastro posição*/
+header {
+  position: relative;
+}
+.cadastro-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cadastro-link {
+  background-color: #70756d; /* Cor de fundo em destaque */
+  color: #ffffff; /* Cor do texto em destaque */
+  padding: 10px 15px; /* Espaçamento interno para o link */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+
+/* style.css cadastro */
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+form label {
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 5px;
+}
+/*formulario*/
+.radio-container {
+  display: block;
+  align-items: center;
+}
+
+.radio-button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.radio-label {
+  margin-right: 20px;
+  
+}
+.question {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.question-label {
+  margin-right: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+/*texto pagina inicial*/
+.paragraph {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* responsivo */
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para telas menores que 600px */
+  
+  header {
+    padding: 10px;
+  }
+  
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Estilos para telas menores que 480px */
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  nav li a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Estilos para telas maiores ou iguais a 768px */
+  
+  header {
+    padding: 30px;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  .content {
+    padding: 30px;
+  }
+  
+  footer {
+    padding: 30px;
+  }
+}
+
+
+form input[type="submit"] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  /* Estilos para telas maiores ou iguais a 1024px */
+  
+  header {
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  nav li a {
+    font-size: 16px;
+  }
+  
+  .content {
+    padding: 40px;
+  }
+  
+  footer {
+    padding: 40px;
+  }
 }
